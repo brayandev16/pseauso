@@ -1,0 +1,43 @@
+.main-nav{
+    margin-top: 10px;/*Para subir  el contenido*/
+    list-style: none;
+    padding-left: 0; /*para mover hacia la izquierda */
+    background-color: rgb(0, 95, 63);
+}
+.main-nav__item {
+    display: inline-block; /*para volver la lista horizontal */
+}
+.main-nav__item a {
+    color: white;
+    padding: 5px;
+    border-radius: 1px;/*Para redondear bordes */
+     text-decoration: none; /*para quitar subrayado de link */
+    
+}
+.main-nav__item a:hover{
+    color: dimgray;
+}
+.main-nav__item a:active{ /*cuando se da click el anclado se queda en rojo */
+    color: red;
+}
+.main-nav__item a::after{ /*despues de cada elemento pone | */
+    content: " | ";
+}
+
+/*Algunos Pseudo-classes:
+:root{}
+//representa elemento HTML, con la especificidad de clase //usado para anidar variables CSS
+:active
+//se activa al hacer clic down
+:visited
+//cambio visual cuando se visita un enlace
+:hover
+//permite cambiar el estado de un elemento cuando elmause se sobrepone sobre él
+:first-child // para afectar solo al primer hijo // se coloca en el padre (ul) para afectar a su primer hijo (li)
+:last-child // para afectar solo al ultimo hijo
+:not  //negar una codiciones (ignorar una condicion) //ejemplo .clase:not(last-child)
+//afecto a todos menos el ultimo
+:empty 
+//ayuda a detectar cuando un elemento esta vacio. //ejemplo .class:empty{background:yellow;} //resaltar
+:nth-child() 
+// tag:nth-child(2){} //afectara al segundo */
